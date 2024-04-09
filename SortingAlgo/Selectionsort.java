@@ -35,5 +35,4 @@ public class Selectionsort {
         arr[first] = arr[second];
         arr[second] = temp;
     }
-    
 }
