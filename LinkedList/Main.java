@@ -17,7 +17,7 @@ public class Main {
         A.Delete(3);
         A.Display();
 
-        A.reverseList(41);
+        // A.reverseList(41);
 
     
     }

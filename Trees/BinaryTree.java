@@ -100,7 +100,7 @@ public class BinaryTree {
         BSF(root);
     }
     public void BSF(Node node){
-        if(node.left == null && node)
+        if(node.left == null ){}
     }
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();

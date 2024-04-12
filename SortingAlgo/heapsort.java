@@ -1,3 +1,6 @@
+package SortingAlgo;
+import java.util.*;
+
 
 public class heapsort {
     public void sort(int arr[])
