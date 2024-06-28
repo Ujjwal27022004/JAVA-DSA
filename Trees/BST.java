@@ -67,6 +67,34 @@ public class BST {
         }
     }
 
+    public void preorder(Node node){
+        if(node == null){
+            return;
+        }
+
+        System.out.print(node.val + " ");
+        preorder(node.left);
+        preorder(node.right);
+    }
+    public void inorder(Node node){
+        if(node == null){
+            return;
+        }
+
+        preorder(node.left);
+        System.out.print(node.val + " ");
+        preorder(node.right);
+    }
+    public void postorder(Node node){
+        if(node == null){
+            return;
+        }
+
+        preorder(node.left);
+        preorder(node.right);
+        System.out.print(node.val + " ");
+    }
+
     public static void main(String[] args) {
         BST tree = new BST();
         int[] nums = { 8, 6, 4, 9, 2 };
