@@ -7,7 +7,7 @@ public class Inheritance {
 
         Dog dog = new Dog("uj",20);
 
-        Cat cat = new Cat();
+        Cat cat = new Cat("vn",21);
         cat.print();
     }
 
@@ -31,8 +31,13 @@ class Dog{
 }
 
 class Cat extends Dog{
+    
 
-    String name = super.name;
+    Cat(String name,int age){
+        super(name,age);
+    }
+
+    //overriding
     @Override
     void print() {
         System.out.println(name + "common");
